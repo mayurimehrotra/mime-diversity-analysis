@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+  margin: 0px;
+  background-color:rgba(0,0,0,0.3);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#tab1 .bar {
+  fill: steelblue;
+}
+.maxBar{
+    fill: #660000;
+}
+.minBar{
+    fill: #0000cc;
+}
+#tab2 .bar {
+  fill: #00cc99;
+}
+   
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+#headerDiv{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        background-color:rgba(0,0,0,0.7);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+    #fileSelectorDiv{
+        height: 42px;
+        padding-top: 5px;
+        padding-left: 70px;
+        border-bottom: 1px solid gainsboro;
+        float: right;
+    }
+    #tabNavDiv{
+        padding: 0px;
+        padding-left: 10px;
+    }
+    #selectFileType{
+        -webkit-appearance: menulist-button;
+        height: 30px;
+        width: 120px;  
+        border: 2px solid grey;
+        font-size: 14px;
+        }
+    #file_load{
+        height: 30px;
+        width: 150px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background-color:cornflowerblue;
+        color: white;
+        font-size: 13px;
+        }
+    
+    #squareMax {
+        color: #660000;
+        padding-left: 10px;
+    }
+    #squareMin {
+        
+        color: #0000cc;
+        padding-left: 10px;
+    }
+</style>
+<body>
+<div id="headerDiv"><p><span> Bar Chart Visualizations</span></p></div>
+
+<div>
+
+  <!-- Nav tabs -->
+  <div id="navBar" class="row">
+      <div id="tabNavDiv" class="col-lg-8">
+        <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">BFA Fingerprint</a></li>
+            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">BFA Correlation Score
+                <span id="squareMax">High Correlation</span>
+                <span id="squareMin">Low Correlation</span>
+                </a>
+            </li>
+      </ul>
+      </div>
+      <div id="fileSelectorDiv" class="col-lg-4">
+        
+          
+          <div id="nameDiv">
+            <select id="selectFileType">
+              <option value="gif">GIF</option>
+              <option value="jpeg" selected="selected">JPEG</option>
+              <option value="quicktime">Quicktime</option>
+              <option value="png">PNG</option>
+              <option value="rfc822">rfc822</option>
+              <option value="basic">Basic</option>
+              <option value="mp4">MP4</option>
+              <option value="mpeg">MPEG</option>
+              <option value="html">HTML</option>
+              <option value="plaintext">Plain Text</option>
+              <option value="pdf">PDF</option>
+              <option value="x-executable">X-Executable</option>
+              <option value="xhtml+xml">XHTML+XML</option>
+              <option value="zip">Zip</option>
+              <option value="octet-stream">Octet-Stream</option>
+              <option value="wav">wav</option>
+              
+            </select>
+
+            <button  id="file_load" onclick="myFunction()">Load Fingerprint</button>
+        </div>
+          
+          
+      </div>
+  </div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active " id="tab1"></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab2"></div>
+  </div>
+
+</div>    
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="barChart.js"></script>
+</body>

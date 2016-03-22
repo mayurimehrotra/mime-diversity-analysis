@@ -1,0 +1,218 @@
+[{
+    "label":"application/x-matroska",
+    "value": 66    
+    },{
+    "label":"application/x-msdownload",
+    "value": 72    
+    },{
+    "label":"audio/x-ms-wma",
+    "value": 55
+    },{
+     "label":"audio/x-wav",
+    "value": 59   
+    },{
+    "label":"image/x-ms-bmp",
+    "value": 59    
+    },{
+    "label":"video/x-msvideo",
+    "value": 96    
+    },{
+    "label":"xscapplication/zip",
+    "value": 85    
+    },{
+     "label":"video/x-ms-wmv",
+    "value": 139   
+    },{
+    "label":"message/rfc822",
+    "value": 182    
+    },{
+    "label":"application/x-shockwave-flash",
+    "value": 141    
+    },{
+    "label":"application/vnd.rn-realmedia",
+    "value": 105    
+    },{
+    "label":"application/msword",
+    "value": 244    
+    },{
+    "label":"application/postscript",
+    "value": 219  
+    },{
+    "label":"video/x-m4v",
+    "value": 203
+    },{
+    "label":"video/mpeg",
+    "value": 255    
+    },{
+    "label":"application/vnd.google-earth.kml+xml",
+    "value": 298
+    },{
+    "label":"application/vnd.ms-excel",
+    "value": 227    
+    },{
+    "label":"application/epub+zip",
+    "value": 36
+    },{
+    "label":"application/fits",
+    "value": 24    
+    },{
+    "label":"application/java-vm",
+    "value": 1    
+    },{
+    "label":"application/java-vm",
+    "value": 1    
+    },{
+    "label":"application/ogg",
+    "value": 26    
+    },{
+    "label":"application/rtf",
+    "value": 53   
+    },{
+    "label":"application/vnd.ms-excel.sheet.4",
+    "value": 1    
+    },{
+    "label":"application/vnd.ms-htmlhelp",
+    "value": 1    
+    },{
+    "label":"application/vnd.oasis.opendocument.presentation",
+    "value": 1   
+    },{
+    "label":"application/vnd.oasis.opendocument.text",
+    "value": 10    
+    },{
+    "label":"application/vnd.sun.xml.writer",
+    "value": 1    
+    },{
+    "label":"application/x-7z-compressed",
+    "value": 2    
+    },{
+    "label":"application/x-bibtex-text-file",
+    "value": 13    
+    },{
+    "label":"application/x-bittorrent",
+    "value": 3    
+    },{
+    "label":"application/x-bzip",
+    "value": 6    
+    },{
+    "label":"application/x-bzip2",
+    "value": 63    
+    },{
+    "label":"application/x-compress",
+    "value": 44
+    },{
+    "label":"application/x-debian-package",
+    "value": 4    
+    },{
+    "label":"application/x-executable",
+    "value": 35
+    },{
+    "label":"application/x-font-ttf",
+    "value": 9    
+    },{
+    "label":"application/x-gtar",
+    "value": 46    
+    },{
+    "label":"application/x-hdf",
+    "value": 41    
+    },{
+    "label":"application/x-java-jnilib",
+    "value": 5    
+    },{
+    "label":"application/x-lha",
+    "value": 2    
+    },{
+    "label":"application/x-msdownload; format=pe",
+    "value": 1    
+    },{
+    "label":"application/x-msdownload; format=pe32",
+    "value": 16
+    },{
+    "label":"application/x-msmetafile",
+    "value": 6    
+    },{
+    "label":"application/x-rar-compressed",
+    "value": 1    
+    },{
+    "label":"application/x-rpm",
+    "value": 3    
+    },{
+    "label":"application/x-sqlite3",
+    "value": 1    
+    },{
+    "label":"application/x-stuffit",
+    "value": 1    
+    },{
+    "label":"application/x-tar",
+    "value": 37    
+    },{
+    "label":"application/x-tex",
+    "value": 17    
+    },{
+    "label":"application/x-xz",
+    "value": 11    
+    },{
+    "label":"application/xslt+xml",
+    "value": 7    
+    },{
+    "label":"audio/basic",
+    "value": 54    
+    },{
+    "label":"audio/mp4",
+    "value": 18    
+    },{
+    "label":"audio/vorbis",
+    "value": 5    
+    },{
+    "label":"audio/x-aiff",
+    "value": 10
+    },{
+    "label":"audio/x-flac",
+    "value": 2    
+    },{
+    "label":"audio/x-mpegurl",
+    "value": 1    
+    },{
+    "label":"image/vnd.adobe.photoshop",
+    "value": 4    
+    },{
+    "label":"image/vnd.dwg",
+    "label": 3
+    },{
+    "label":"image/x-bpg",
+    "value": 7    
+    },{
+    "label":"image/x-xcf",
+    "value": 1    
+    },{
+    "label":"message/x-emlx",
+    "value": 1
+    },{
+    "label":"text/troff",
+    "value": 2    
+    },{
+    "label":"text/x-diff",
+    "value": 1    
+    },{
+    "label":"text/x-jsp",
+    "value": "3"    
+    },{
+    "label":"text/x-perl",
+    "value": 14    
+    },{
+    "label":"text/x-php",
+    "value": 25    
+    },{
+    "label":"text/x-python",
+    "value": 5    
+    },{
+    "label":"text/x-vcard",
+    "value": 19
+    },{
+    "label":"video/x-flv",
+    "value": 13
+    },{
+    "label":"video/x-ms-asf",
+    "value": 26    
+    }
+]

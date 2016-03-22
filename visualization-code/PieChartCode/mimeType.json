@@ -1,0 +1,81 @@
+[
+    {
+    "label":"application/atom+xml",
+    "value": 2984
+    },{
+    "label":"application/dita+xml; format=concept",
+     "value":345
+    },{
+    "label":"application/gzip",
+    "value": 2060
+    },{
+    "label":"application/octet-stream",
+    "value": 211687    
+    },{
+    "label":"application/pdf",
+    "value": 44658
+    },{
+    "label":"application/rdf+xml",
+    "value": 1042
+    },{
+    "label":"application/rss+xml",
+    "value": 8894
+    },{
+     "label":"application/x-elc",
+    "value": 324   
+    },{
+    "label":"application/x-sh",
+    "value": 5680    
+    },{
+    "label":"application/x-tika-msoffice",
+    "value": 2809
+    },{
+    "label":"application/x-tika-ooxml",
+    "value": 1775    
+    },{
+    "label":"application/xhtml+xml",
+    "value": 385751    
+    },{
+    "label":"application/xml",
+    "value": 21000
+    },{
+    "label":"application/zip",
+    "value": 3762    
+    },{
+    "label":"audio/mpeg",
+    "value": 646   
+    },{
+    "label":"image/gif",
+    "value": 40049    
+    },{
+    "label":"image/jpeg",
+    "value": 85879    
+    },{
+    "label":"image/png",
+    "value": 37997    
+    },{
+    "label":"image/svg+xml",
+    "value": 342    
+    },{
+    "label":"image/tiff",
+    "value": 477    
+    },{
+    "label":"image/vnd.microsoft.icon",
+    "value": 1570    
+    },{
+    "label":"text/html",
+    "value": 739588
+    },{
+    "label":"text/plain",
+    "value": 137335    
+    },{
+    "label":"video/mp4",
+    "value": 675    
+    },{
+    "label":"video/quicktime",
+    "value": 954    
+    },{
+    "label":"Other",
+    "value":3247  
+    }
+]

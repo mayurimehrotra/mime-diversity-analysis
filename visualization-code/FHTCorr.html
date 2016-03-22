@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Correlation Explorer in D3.js</title>
+  
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src="FHTcorrexplorer.js"></script>
+    <style>
+    .pixel:hover
+        { 
+          stroke: #000;
+          stroke-width: 1px;
+        }
+        .tick:hover
+        { 
+          fill: #aaa;
+        /* stroke: #000;  
+        stroke-width: 1px;*/
+        }
+        div.tooltip
+        {
+            position: absolute;
+            text-align: left;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: #000;
+          color: #ddd;
+            border: solid 1px #aaa;
+            border-radius: 4px;
+            pointer-events: none;
+        }
+        body{
+            margin: 0px;
+            background-color:rgba(0,0,0,0.3);
+        }
+        #headerDiv{
+            height: 100px;
+            width: 100%;
+            margin: 0px;
+            padding-top: 10px;
+            background-color:rgba(0,0,0,0.6);
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            border-bottom: 2px solid white;
+        }
+        #controlsDiv{
+            height: 80px;
+            width: 100%;
+            margin: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            background-color:rgba(0,0,0,0.3);
+            
+        }
+        .hideElem{
+            visibility: hidden;
+        }
+        #inputText{
+            height: 20px;
+            width: 200px;        
+        }
+        .selectType{
+            -webkit-appearance: menulist-button;
+            height: 30px;
+            width: 120px;  
+            border: 2px solid grey;
+            font-size: 14px;
+            
+        }
+        #sortByDiv{
+            width: 20%;
+            height: 50px;
+            margin-left: 80%;
+            padding-left: 20px;
+        }
+        #nameDiv{
+            width: 80%;
+            height: 50px;
+            float: left;
+        }
+        #sortPara{
+            float:right;
+            padding-right: 50px;
+        }
+        #visTitle{
+            font-size: 20px;
+            color: whitesmoke;
+        }
+        #file_load{
+            height: 30px;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background-color:cornflowerblue;
+            color: white;
+            font-size: 13px;
+        }
+        #label{
+            font-size: 20px;
+        }
+        #sort_func{
+            -webkit-appearance: menulist-button;
+            height: 30px;
+            width: 120px;  
+            border: 2px solid grey;
+            font-size: 14px;
+        }
+    </style>
+    <!--script>
+    function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        console.log(x);
+    }
+</script-->
+</head>
+
+<body>
+  <div id="headerDiv"><p><span> File Header Trailer Visualizations</span></p></div>
+  <div id="controlsDiv">
+      <p>
+        <div id="nameDiv">
+            <select class="selectType" id="selectFileType">
+              <option value="gif">GIF</option>
+              <option value="jpeg" selected="selected">JPEG</option>
+              <option value="quicktime">Quicktime</option>
+              <option value="png">PNG</option>
+              <option value="rfc822">rfc822</option>
+              <option value="basic">Basic</option>
+              <option value="mp4">MP4</option>
+              <option value="mpeg">MPEG</option>
+              <option value="html">HTML</option>
+              <option value="plaintext">Plain Text</option>
+              <option value="pdf">PDF</option>
+              <option value="x-executable">X-Executable</option>
+              <option value="xhtml+xml">XHTML+XML</option>
+              <option value="zip">Zip</option>
+              <option value="octet-stream">Octet-Stream</option>
+              <option value="wav">wav</option>
+              <option value="ps">Postscript</option>
+              <option value="x-tar">X-tar</option>
+                
+            </select>
+            
+            <select class="selectType" id="selectHTType">
+              <option value="H" selected="selected">Header</option>
+              <option value="T">Trailer</option>
+            </select>
+            
+            <select class="selectType" id="selectByteType">
+              <option value="16" selected="selected">16 Bytes</option>
+              <option value="8">8 Bytes</option>
+              <option value="4">4 Bytes</option>
+            </select>
+
+            <input class="hideElem" type="checkbox" id="transpose">
+            <button  id="file_load" onclick="myFunction()">Load Fingerprint</button>
+            <button class="hideElem" id="js_comparison">or generate JS comparison table?</button>
+        </div>
+        <div id="sortByDiv">
+                <span id="label">Sort :</span>
+                <select id="sort_func">
+                  <option value="abs_value">by Absolute Value</option>
+                  <option value="value" selected="selected">by Value</option>
+                  <option value="similarity">by Similarity</option>
+                  <option value="alphabetic">Alphabetic</option>
+                  <option value="original">Original</option>
+                </select>
+        </div>
+        
+        <input class="hideElem" type='checkbox' id="keep_symmetry" checked="true">
+        
+        <input class="hideElem" type='text' id="zoom" value="1.">
+      </p>
+</div>
+    
+  <div class="tooltip" style="opacity: 0.01"></div>
+
+  <!-- <p>Built with <a href="http://d3js.org/">d3.js</a>.</p> -->
+  
+</body>
+
+
+</html>
